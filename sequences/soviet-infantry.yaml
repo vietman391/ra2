@@ -150,6 +150,8 @@ flakt:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	paradrop:
+		Start: 293
 	icon: flkticon
 
 shk:
@@ -203,6 +205,8 @@ shk:
 		Length: 6
 		Facings: 8
 		Tick: 80
+	paradrop:
+		Start: 292
 	icon: shkicon
 
 terror:
