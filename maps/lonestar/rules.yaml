@@ -1,0 +1,52 @@
+^ExistsInWorld:
+	Taggable:
+
+waypoint:
+	Taggable:
+
+^Building:
+	Power:
+		Amount: 1 # TODO: Get rid of the annoying low power
+
+Player:
+	-ConquestVictoryConditions:
+	ClassicProductionQueue@Infantry:
+		BuildSpeed: 1.5
+	Shroud:
+		FogLocked: true
+		FogEnabled: true
+		ExploredMapLocked: true
+		ExploredMapEnabled: true
+	PlayerResources:
+		DefaultCashLocked: true
+		DefaultCash: 5000
+
+World:
+	LuaScript:
+		Scripts: utils.lua, waves.lua, map.lua
+	-SpawnMPUnits:
+	MapOptions:
+		TechLevelLocked: true
+		TechLevel: Unrestricted
+		Difficulties: Hard, Normal, Easy
+		ShortGameLocked: true
+		ShortGameEnabled: false
+	MapBuildRadius:
+		AllyBuildRadiusLocked: true
+		AllyBuildRadiusEnabled: true
+	GlobalLightingPaletteEffect:
+		Red: 0.75
+		Green: 0.85
+		Blue: 1.5
+		Ambient: 0.75
+	MPStartUnits@mcvonly:
+		BaseActor: gapile
+
+powerproxy.paratroopers:
+	AlwaysVisible:
+	ParatroopersPower:
+		UnitType: pdplane
+		DropItems: e2, e2, e2, e2, e2, e2
+
+camiam04:
+	MustBeDestroyed:
